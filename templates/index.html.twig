@@ -12,7 +12,6 @@
 
             <div class="container row">
             
-                
                 {% for utilisateur in utilisateurs %}
                     <div class="card col-4">
                         <img class="card-img-top" src="{{ utilisateur.picture.large }}" alt="Image de {{ utilisateur.name.first }}" />
@@ -33,11 +32,14 @@
                         </div>
                         
                     </div>
+                    {% else %}
+                        <h3>Les utilisateurs demandés sont à l' aquaponey</h3>
                 {% endfor %}   
             </div>
 
 		</div>
 	</div>
+                
 
 {% endblock %}
 
